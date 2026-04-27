@@ -31,13 +31,6 @@ author:
   employer         :
   uri              : # URL
   email            : yibinlin@stu.xjtu.edu.cn
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yibinlin@stu.xjtu.edu.cn"  # 替换为你的真实邮箱
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yibinlin6"
  
  # Academic websites
   academia         : # URL
