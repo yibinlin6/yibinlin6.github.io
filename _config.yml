@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Yibin Lin's Academic Homepage"
 title_separator          : "-"
-name                     : &name "Yibin Lin (Adrian)"
-description              : &description "Undergraduate at Xi'an Jiaotong University"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : &name "Yibin Lin (林熠彬)"
+description              : &description "Undergraduate at Xi'an Jiaotong University | Computer Science & Technology"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://yibinlin6.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "yibinlin6/yibinlin6.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Yibin Lin"
+  name             : "Yibin Lin (林熠彬)"
   pronouns         : # example: "she/her"  
-  bio              : "CS Junior @ XJTU"
+  bio              : "CS Undergraduate @ XJTU"
   location         : "Xi'an, China"
-  employer         :
+  employer         : "Xi'an Jiaotong University"
   uri              : # URL
-  email            : yibinlin@stu.xjtu.edu.cn
+  email            : yibinlin753@gmail.com
  
  # Academic websites
   academia         : # URL
@@ -84,12 +84,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  manuscripts:
+    title: 'Journal Articles'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

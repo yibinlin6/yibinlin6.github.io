@@ -1,152 +1,132 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Yibin Lin (林熠彬)",
+    "email": "yibinlin753@gmail.com",
+    "phone": "18759950082",
+    "website": "https://yibinlin6.github.io",
+    "summary": "Undergraduate student at Xi'an Jiaotong University, majoring in Computer Science and Technology. Research interests in Multimodal Large Language Models, Embodied Intelligence, and Computer Vision.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Xi'an",
+      "countryCode": "CN",
+      "region": "Shaanxi"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "yibinlin6",
+        "url": "https://github.com/yibinlin6"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
+      "name": "AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities",
+      "position": "Researcher",
       "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "endDate": "",
+      "summary": "Built a comprehensive audio-video dataset covering 33 fine-grained categories and 190 instructions. Implemented a decoupled evaluation pipeline combining objective physical metrics with modality-separated MLLM checklist. Deployed evaluation on SOTA models including Wan2.7 and LTX2.",
+      "highlights": [
+        "NeurIPS 2026 under review",
+        "Cross-modal physical alignment evaluation",
+        "Human-machine consistency analysis"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
+      "name": "RoboCup Robot Electronic Control System",
+      "position": "Developer",
       "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "endDate": "",
+      "summary": "Developed electronic control system for multi-DOF robotic arm. Applied PID control for gravity compensation, eliminating steady-state errors and motion jitter.",
+      "highlights": [
+        "Multi-degree-of-freedom robotic arm control",
+        "PID gravity compensation algorithm",
+        "Sensor closed-loop control"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
+      "name": "YOLO Deployment on Ascend NPU",
+      "position": "Developer",
       "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "endDate": "",
+      "summary": "Completed lightweight deployment of YOLO models on Ascend NPU. Improved FPS through model conversion and edge-side acceleration optimization.",
+      "highlights": [
+        "Edge-side inference optimization",
+        "Model conversion and acceleration",
+        "Reduced transmission latency"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "education": [
+    {
+      "institution": "Xi'an Jiaotong University",
+      "area": "Computer Science and Technology",
+      "studyType": "B.S.",
+      "startDate": "2023-09",
+      "endDate": "Present",
+      "gpa": null,
+      "courses": [
+        "Linear Algebra (99)",
+        "Advanced Mathematics (95)",
+        "Data Structures (90)",
+        "OOP (98)",
+        "Digital Logic Circuits (90)",
+        "Probability Theory (89)",
+        "ICS (96)",
+        "Computer Graphics (95)",
+        "Computer Networks (89)",
+        "Operating Systems (85)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["C/C++", "Python"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "level": "",
+      "keywords": ["PyTorch", "YOLO", "Git", "Linux/Ubuntu"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "CET-4: 619, CET-6: 590"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Multimodal Large Language Models",
+      "keywords": []
+    },
+    {
+      "name": "Embodied Intelligence",
+      "keywords": []
+    },
+    {
+      "name": "Computer Vision",
+      "keywords": []
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities",
+      "publisher": "NeurIPS 2026 (under review)",
+      "releaseDate": "2026",
+      "website": "",
+      "summary": "A comprehensive benchmark for evaluating audio-video editing capabilities, covering 33 fine-grained categories and 190 instructions with decoupled evaluation pipeline."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
