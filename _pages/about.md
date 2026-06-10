@@ -18,7 +18,7 @@ I am an undergraduate student majoring in **Computer Science and Technology** at
 
 **Core Courses:** Linear Algebra (99), Advanced Mathematics (95), Data Structures (90), OOP (98), Digital Logic Circuits (90), Probability Theory (89), ICS (96), Computer Graphics (95), Computer Networks (89), Operating Systems (85)
 
-**Ranking:** Freshman year: 17/193, Sophomore year: 22/187
+**Ranking:** Freshman year: 17/193, Sophomore year: 28/187
 
 ## Honors & Awards
 
