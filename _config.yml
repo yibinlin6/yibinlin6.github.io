@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "zh-CN"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yibin Lin's Academic Homepage"
+title                    : "Yibin Lin's Homepage"
 title_separator          : "-"
 name                     : &name "Yibin Lin (林熠彬)"
 description              : &description "Undergraduate at Xi'an Jiaotong University | Computer Science & Technology"   # Update this with a general description of your site, this is the default if not overridden by a page
