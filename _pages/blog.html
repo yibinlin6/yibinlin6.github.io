@@ -7,24 +7,74 @@ author_profile: true
 
 {% include base_path %}
 
-<p>
-  This is where I share research notes, project updates, and occasional thoughts on
-  multimodal models, embodied intelligence, and engineering practice.
-</p>
+{% assign technical_posts = site.posts | where_exp: "post", "post.categories contains 'technical-docs'" %}
+{% assign study_posts = site.posts | where_exp: "post", "post.categories contains 'study-notes'" %}
+{% assign life_posts = site.posts | where_exp: "post", "post.categories contains 'life'" %}
 
-{% assign post_count = site.posts | size %}
-{% if post_count > 0 %}
-  {% capture written_year %}'None'{% endcapture %}
-  {% for post in site.posts %}
-    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% if year != written_year %}
-      <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-      {% capture written_year %}{{ year }}{% endcapture %}
-    {% endif %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% else %}
-  <p>
-    No posts yet. I will add writing here as new projects, papers, and experiments take shape.
+<section class="blog-overview">
+  <p class="blog-overview__eyebrow">Blog</p>
+  <h2 class="blog-overview__title">Writing, notes, and daily records.</h2>
+  <p class="blog-overview__lead">
+    This page is organized into three parts: technical documentation, study notes, and life journal.
   </p>
-{% endif %}
+</section>
+
+<section class="blog-section">
+  <div class="blog-section__header">
+    <div>
+      <p class="blog-section__eyebrow">01</p>
+      <h2 class="blog-section__title">Technical Docs</h2>
+    </div>
+    <p class="blog-section__count">{{ technical_posts | size }} posts</p>
+  </div>
+
+  {% if technical_posts.size > 0 %}
+    {% for post in technical_posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% else %}
+    <p class="blog-section__empty">
+      No technical docs yet. Use <code>categories: [technical-docs]</code> in a post front matter to place it here.
+    </p>
+  {% endif %}
+</section>
+
+<section class="blog-section">
+  <div class="blog-section__header">
+    <div>
+      <p class="blog-section__eyebrow">02</p>
+      <h2 class="blog-section__title">Study Notes</h2>
+    </div>
+    <p class="blog-section__count">{{ study_posts | size }} posts</p>
+  </div>
+
+  {% if study_posts.size > 0 %}
+    {% for post in study_posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% else %}
+    <p class="blog-section__empty">
+      No study notes yet. Use <code>categories: [study-notes]</code> in a post front matter to place it here.
+    </p>
+  {% endif %}
+</section>
+
+<section class="blog-section">
+  <div class="blog-section__header">
+    <div>
+      <p class="blog-section__eyebrow">03</p>
+      <h2 class="blog-section__title">Life Journal</h2>
+    </div>
+    <p class="blog-section__count">{{ life_posts | size }} posts</p>
+  </div>
+
+  {% if life_posts.size > 0 %}
+    {% for post in life_posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% else %}
+    <p class="blog-section__empty">
+      No life posts yet. Use <code>categories: [life]</code> in a post front matter to place it here.
+    </p>
+  {% endif %}
+</section>
