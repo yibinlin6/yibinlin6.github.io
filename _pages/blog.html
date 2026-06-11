@@ -30,9 +30,21 @@ author_profile: true
   </div>
 
   {% if technical_posts.size > 0 %}
-    {% for post in technical_posts limit:3 %}
-      {% include archive-single.html %}
-    {% endfor %}
+    <div class="blog-preview-list">
+      {% for post in technical_posts limit:2 %}
+        <article class="blog-preview-item">
+          <h3 class="blog-preview-item__title">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          </h3>
+          <p class="blog-preview-item__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          </p>
+          {% if post.excerpt %}
+            <p class="blog-preview-item__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
   {% else %}
     <p class="blog-category-empty">No technical docs yet.</p>
   {% endif %}
@@ -49,9 +61,21 @@ author_profile: true
   </div>
 
   {% if study_posts.size > 0 %}
-    {% for post in study_posts limit:3 %}
-      {% include archive-single.html %}
-    {% endfor %}
+    <div class="blog-preview-list">
+      {% for post in study_posts limit:2 %}
+        <article class="blog-preview-item">
+          <h3 class="blog-preview-item__title">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          </h3>
+          <p class="blog-preview-item__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          </p>
+          {% if post.excerpt %}
+            <p class="blog-preview-item__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
   {% else %}
     <p class="blog-category-empty">No study notes yet.</p>
   {% endif %}
@@ -68,9 +92,21 @@ author_profile: true
   </div>
 
   {% if life_posts.size > 0 %}
-    {% for post in life_posts limit:3 %}
-      {% include archive-single.html %}
-    {% endfor %}
+    <div class="blog-preview-list">
+      {% for post in life_posts limit:2 %}
+        <article class="blog-preview-item">
+          <h3 class="blog-preview-item__title">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          </h3>
+          <p class="blog-preview-item__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          </p>
+          {% if post.excerpt %}
+            <p class="blog-preview-item__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
   {% else %}
     <p class="blog-category-empty">No life posts yet.</p>
   {% endif %}
