@@ -17,6 +17,7 @@ url                      : https://yibinlin6.github.io # The base hostname & pro
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yibinlin6/yibinlin6.github.io"
+external_blog_url        :
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -31,6 +32,8 @@ author:
   employer         : "Xi'an Jiaotong University"
   uri              : # URL
   email            : yibinlin753@gmail.com
+  wechat           : "ssr0082"
+  phone            : "18759950082"
  
  # Academic websites
   academia         : # URL

@@ -11,15 +11,28 @@ redirect_from:
     <p class="home-hero__eyebrow">About Me</p>
     <p class="home-hero__lead">
       I am an undergraduate student majoring in <strong>Computer Science and Technology</strong> at
-      <strong>Xi'an Jiaotong University (XJTU)</strong>.
-      I am currently learning and exploring topics related to multimodal models, embodied intelligence, and computer vision.
+      <strong>Xi'an Jiaotong University (XJTU)</strong>. This homepage brings together my academic background,
+      selected work, and future updates in one place.
     </p>
-    <div class="home-hero__tags">
-      <span>Multimodal LLMs</span>
-      <span>Embodied Intelligence</span>
-      <span>Computer Vision</span>
-    </div>
   </div>
+
+  <aside class="blog-teaser-card">
+    <p class="blog-teaser-card__eyebrow">Blog</p>
+    <h2 class="blog-teaser-card__title">A standalone blog is on the way.</h2>
+    <p class="blog-teaser-card__lead">
+      I plan to launch a separate blog for notes, technical writing, and life updates under its own domain.
+    </p>
+    <div class="blog-teaser-card__orbit">
+      <span>Notes</span>
+      <span>Projects</span>
+      <span>Life</span>
+    </div>
+    {% if site.external_blog_url %}
+      <a class="blog-teaser-card__link" href="{{ site.external_blog_url }}">Visit Blog</a>
+    {% else %}
+      <span class="blog-teaser-card__link blog-teaser-card__link--muted">Domain coming soon</span>
+    {% endif %}
+  </aside>
 </section>
 
 <section class="home-section">
@@ -85,17 +98,34 @@ redirect_from:
       <li><strong>Excellent Student Award</strong> — Xi'an Jiaotong University</li>
     </ul>
   </article>
+</section>
 
-  <article class="home-card">
-    <div class="home-section__header">
-      <p class="home-section__eyebrow">Contact</p>
-      <h2 class="home-section__title">Get in touch</h2>
+<section class="home-section">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Publications</p>
+    <h2 class="home-section__title">Selected work</h2>
+  </div>
+
+  {% if site.publications and site.publications.size > 0 %}
+    <div class="publication-list">
+      {% for post in site.publications reversed %}
+        <article class="publication-entry">
+          <div class="publication-entry__meta">
+            <span>{{ post.venue }}</span>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
+          </div>
+          <h3 class="publication-entry__title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          {% if post.excerpt %}
+            <p class="publication-entry__excerpt">{{ post.excerpt }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
     </div>
-    <ul class="home-list home-list--compact">
-      <li><strong>Email</strong> — <a href="mailto:yibinlin753@gmail.com">yibinlin753@gmail.com</a></li>
-      <li><strong>GitHub</strong> — <a href="https://github.com/yibinlin6">yibinlin6</a></li>
-      <li><strong>WeChat</strong> — ssr0082</li>
-      <li><strong>Phone</strong> — 18759950082</li>
-    </ul>
-  </article>
+  {% else %}
+    <article class="education-card">
+      <p class="home-card__empty">Publication updates will be added here.</p>
+    </article>
+  {% endif %}
 </section>
