@@ -9,36 +9,40 @@ redirect_from:
 <section class="home-hero">
   <div class="home-hero__copy">
     <p class="home-hero__eyebrow">About Me</p>
-    <h2 class="home-hero__title">Undergraduate researcher working across multimodal models, embodied intelligence, and vision.</h2>
+    <h2 class="home-hero__title">Yibin Lin</h2>
     <p class="home-hero__lead">
-      I am a Computer Science and Technology undergraduate at <strong>Xi'an Jiaotong University (XJTU)</strong>.
-      My current interests focus on <strong>Multimodal Large Language Models</strong>, <strong>Embodied Intelligence</strong>,
-      and <strong>Computer Vision</strong>, especially where evaluation, interaction, and real-world deployment meet.
+      I am an undergraduate student majoring in <strong>Computer Science and Technology</strong> at
+      <strong>Xi'an Jiaotong University (XJTU)</strong>.
+      I am currently learning and exploring topics related to multimodal models, embodied intelligence, and computer vision.
     </p>
     <div class="home-hero__tags">
       <span>Multimodal LLMs</span>
       <span>Embodied Intelligence</span>
       <span>Computer Vision</span>
-      <span>Evaluation</span>
     </div>
   </div>
 
   <aside class="home-hero__panel">
-    <div class="home-fact">
-      <span class="home-fact__label">School</span>
-      <strong>Xi'an Jiaotong University</strong>
-    </div>
-    <div class="home-fact">
-      <span class="home-fact__label">Major</span>
-      <strong>Computer Science and Technology</strong>
-    </div>
-    <div class="home-fact">
-      <span class="home-fact__label">Ranking</span>
-      <strong>17/193 · 28/187</strong>
-    </div>
-    <div class="home-fact">
-      <span class="home-fact__label">Focus</span>
-      <strong>Research + Engineering</strong>
+    <p class="home-hero__panel-intro">
+      I am building a solid foundation in computer science while gaining research and engineering experience through coursework and projects.
+    </p>
+    <div class="home-fact-grid">
+      <div class="home-fact">
+        <span class="home-fact__label">School</span>
+        <strong>Xi'an Jiaotong University</strong>
+      </div>
+      <div class="home-fact">
+        <span class="home-fact__label">Major</span>
+        <strong>Computer Science and Technology</strong>
+      </div>
+      <div class="home-fact">
+        <span class="home-fact__label">Ranking</span>
+        <strong>17/193 · 28/187</strong>
+      </div>
+      <div class="home-fact">
+        <span class="home-fact__label">Status</span>
+        <strong>Undergraduate Student</strong>
+      </div>
     </div>
   </aside>
 </section>
