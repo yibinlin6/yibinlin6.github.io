@@ -6,29 +6,116 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## About Me
+<section class="home-hero">
+  <div class="home-hero__copy">
+    <p class="home-hero__eyebrow">About Me</p>
+    <h2 class="home-hero__title">Undergraduate researcher working across multimodal models, embodied intelligence, and vision.</h2>
+    <p class="home-hero__lead">
+      I am a Computer Science and Technology undergraduate at <strong>Xi'an Jiaotong University (XJTU)</strong>.
+      My current interests focus on <strong>Multimodal Large Language Models</strong>, <strong>Embodied Intelligence</strong>,
+      and <strong>Computer Vision</strong>, especially where evaluation, interaction, and real-world deployment meet.
+    </p>
+    <div class="home-hero__tags">
+      <span>Multimodal LLMs</span>
+      <span>Embodied Intelligence</span>
+      <span>Computer Vision</span>
+      <span>Evaluation</span>
+    </div>
+  </div>
 
-I am an undergraduate student majoring in **Computer Science and Technology** at **Xi'an Jiaotong University (XJTU)**. My research interests lie in **Multimodal Large Language Models**, **Embodied Intelligence**, and **Computer Vision**.
+  <aside class="home-hero__panel">
+    <div class="home-fact">
+      <span class="home-fact__label">School</span>
+      <strong>Xi'an Jiaotong University</strong>
+    </div>
+    <div class="home-fact">
+      <span class="home-fact__label">Major</span>
+      <strong>Computer Science and Technology</strong>
+    </div>
+    <div class="home-fact">
+      <span class="home-fact__label">Ranking</span>
+      <strong>17/193 · 28/187</strong>
+    </div>
+    <div class="home-fact">
+      <span class="home-fact__label">Focus</span>
+      <strong>Research + Engineering</strong>
+    </div>
+  </aside>
+</section>
 
-## Education
+<section class="home-section">
+  <div class="home-section__header">
+    <p class="home-section__eyebrow">Education</p>
+    <h2 class="home-section__title">Academic background</h2>
+  </div>
 
-| Period             | Institution               | Major                                   |
-| ------------------ | ------------------------- | --------------------------------------- |
-| 2023.09 – Present | Xi'an Jiaotong University | B.S. in Computer Science and Technology |
+  <article class="education-card">
+    <div class="education-card__identity">
+      <img
+        class="education-card__logo"
+        src="/images/XJTU_emblem.svg"
+        alt="Xi'an Jiaotong University logo"
+      />
+      <div>
+        <h3>Xi'an Jiaotong University</h3>
+        <p>B.S. in Computer Science and Technology</p>
+        <p>2023.09 – Present</p>
+      </div>
+    </div>
 
-**Core Courses:** Linear Algebra (99), Advanced Mathematics (95), Data Structures (90), OOP (98), Digital Logic Circuits (90), Probability Theory (89), ICS (96), Computer Graphics (95), Computer Networks (89), Operating Systems (85)
+    <div class="education-card__stats">
+      <div>
+        <span>Freshman Ranking</span>
+        <strong>17/193</strong>
+      </div>
+      <div>
+        <span>Sophomore Ranking</span>
+        <strong>28/187</strong>
+      </div>
+      <div>
+        <span>Scholarships</span>
+        <strong>Second-Class, 2x</strong>
+      </div>
+    </div>
 
-**Ranking:** Freshman year: 17/193, Sophomore year: 28/187
+    <div class="education-card__courses">
+      <span>Linear Algebra 99</span>
+      <span>Advanced Mathematics 95</span>
+      <span>Data Structures 90</span>
+      <span>OOP 98</span>
+      <span>Digital Logic Circuits 90</span>
+      <span>Probability Theory 89</span>
+      <span>ICS 96</span>
+      <span>Computer Graphics 95</span>
+      <span>Computer Networks 89</span>
+      <span>Operating Systems 85</span>
+    </div>
+  </article>
+</section>
 
-## Honors & Awards
+<section class="home-grid">
+  <article class="home-card">
+    <div class="home-section__header">
+      <p class="home-section__eyebrow">Honors</p>
+      <h2 class="home-section__title">Awards and distinctions</h2>
+    </div>
+    <ul class="home-list">
+      <li><strong>Meritorious Winner (M奖)</strong> — Mathematical Contest in Modeling (MCM/ICM)</li>
+      <li><strong>Third Prize</strong> — RoboCup China Competition</li>
+      <li><strong>Second-Class Scholarship</strong> — Xi'an Jiaotong University</li>
+      <li><strong>Excellent Student Award</strong> — Xi'an Jiaotong University</li>
+    </ul>
+  </article>
 
-- **Meritorious Winner (M奖)** — Mathematical Contest in Modeling (MCM/ICM)
-- **Third Prize** — RoboCup China Competition
-- **Second-Class Scholarship** — Xi'an Jiaotong University (Freshman & Sophomore Year)
-- **Excellent Student Award** — Xi'an Jiaotong University
-
-## Contact
-
-- **Email:** yibinlin753@gmail.com
-- **GitHub:** [yibinlin6](https://github.com/yibinlin6)
-- **Phone:** 18759950082
+  <article class="home-card">
+    <div class="home-section__header">
+      <p class="home-section__eyebrow">Contact</p>
+      <h2 class="home-section__title">Get in touch</h2>
+    </div>
+    <ul class="home-list home-list--compact">
+      <li><strong>Email</strong> — <a href="mailto:yibinlin753@gmail.com">yibinlin753@gmail.com</a></li>
+      <li><strong>GitHub</strong> — <a href="https://github.com/yibinlin6">yibinlin6</a></li>
+      <li><strong>Phone</strong> — 18759950082</li>
+    </ul>
+  </article>
+</section>
