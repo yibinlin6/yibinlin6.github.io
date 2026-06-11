@@ -8,13 +8,12 @@
   margin-bottom: 2.5rem;
 
   @include breakpoint($large) {
-    grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.9fr);
+    grid-template-columns: minmax(0, 1fr);
     align-items: stretch;
   }
 }
 
 .home-hero__copy,
-.home-hero__panel,
 .education-card,
 .home-card {
   border: 1px solid var(--global-border-color);
@@ -25,7 +24,6 @@
 
 html[data-theme="dark"] {
   .home-hero__copy,
-  .home-hero__panel,
   .education-card,
   .home-card {
     background: linear-gradient(180deg, rgba(20, 24, 32, 0.9), rgba(13, 17, 23, 0.96));
@@ -49,29 +47,12 @@ html[data-theme="dark"] {
   }
 }
 
-.home-hero__panel,
 .home-card {
   padding: 1.5rem;
 }
 
-.home-hero__panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.25rem;
-}
-
-.home-hero__title {
-  margin: 0 0 1rem;
-  max-width: none;
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  border-bottom: 0;
-}
-
 .home-hero__lead {
-  margin-bottom: 1.25rem;
+  margin: 0 0 1.25rem;
   font-size: 1.08rem;
   line-height: 1.8;
   max-width: 42rem;
@@ -109,50 +90,6 @@ html[data-theme="dark"] {
   .education-card__courses span {
     background: rgba(111, 179, 255, 0.12);
   }
-}
-
-.home-hero__panel-intro {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--global-text-color);
-}
-
-.home-fact-grid {
-  display: grid;
-  gap: 0.9rem;
-
-  @include breakpoint($small) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.home-fact__label {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: var(--global-text-color-light);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.home-fact {
-  padding: 1rem 1rem 1.05rem;
-  border-radius: 18px;
-  background: rgba(21, 101, 192, 0.06);
-}
-
-html[data-theme="dark"] {
-  .home-fact {
-    background: rgba(111, 179, 255, 0.1);
-  }
-}
-
-.home-fact strong {
-  display: block;
-  font-size: 0.98rem;
-  line-height: 1.5;
 }
 
 .home-section {
@@ -272,7 +209,6 @@ html[data-theme="dark"] {
 
 @include breakpoint(max-width $small) {
   .home-hero__copy,
-  .home-hero__panel,
   .education-card,
   .home-card {
     border-radius: 20px;

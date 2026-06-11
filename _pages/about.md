@@ -9,7 +9,6 @@ redirect_from:
 <section class="home-hero">
   <div class="home-hero__copy">
     <p class="home-hero__eyebrow">About Me</p>
-    <h2 class="home-hero__title">Yibin Lin</h2>
     <p class="home-hero__lead">
       I am an undergraduate student majoring in <strong>Computer Science and Technology</strong> at
       <strong>Xi'an Jiaotong University (XJTU)</strong>.
@@ -21,30 +20,6 @@ redirect_from:
       <span>Computer Vision</span>
     </div>
   </div>
-
-  <aside class="home-hero__panel">
-    <p class="home-hero__panel-intro">
-      I am building a solid foundation in computer science while gaining research and engineering experience through coursework and projects.
-    </p>
-    <div class="home-fact-grid">
-      <div class="home-fact">
-        <span class="home-fact__label">School</span>
-        <strong>Xi'an Jiaotong University</strong>
-      </div>
-      <div class="home-fact">
-        <span class="home-fact__label">Major</span>
-        <strong>Computer Science and Technology</strong>
-      </div>
-      <div class="home-fact">
-        <span class="home-fact__label">Ranking</span>
-        <strong>17/193 · 28/187</strong>
-      </div>
-      <div class="home-fact">
-        <span class="home-fact__label">Status</span>
-        <strong>Undergraduate Student</strong>
-      </div>
-    </div>
-  </aside>
 </section>
 
 <section class="home-section">
@@ -119,6 +94,7 @@ redirect_from:
     <ul class="home-list home-list--compact">
       <li><strong>Email</strong> — <a href="mailto:yibinlin753@gmail.com">yibinlin753@gmail.com</a></li>
       <li><strong>GitHub</strong> — <a href="https://github.com/yibinlin6">yibinlin6</a></li>
+      <li><strong>WeChat</strong> — ssr0082</li>
       <li><strong>Phone</strong> — 18759950082</li>
     </ul>
   </article>
