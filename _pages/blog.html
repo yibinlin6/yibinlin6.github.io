@@ -7,107 +7,22 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign technical_posts = site.posts | where_exp: "post", "post.categories contains 'technical-docs'" %}
-{% assign study_posts = site.posts | where_exp: "post", "post.categories contains 'study-notes'" %}
-{% assign life_posts = site.posts | where_exp: "post", "post.categories contains 'life'" %}
-
 <section class="blog-directory">
-  <p class="blog-directory__eyebrow">Blog Directory</p>
-  <h2 class="blog-directory__title">Browse by category.</h2>
+  <p class="blog-directory__eyebrow">Independent Blog</p>
+  <h2 class="blog-directory__title">Blog will move to a separate site.</h2>
   <p class="blog-directory__lead">
-    Each section below shows only the latest posts. Click the section title to view all articles in that category.
+    I plan to launch a dedicated blog under a separate domain for longer writing, notes, and personal updates.
   </p>
 </section>
 
 <section class="blog-preview-section">
   <div class="blog-preview-section__header">
     <div>
-      <p class="blog-preview-section__eyebrow">01</p>
-      <h2 class="blog-preview-section__title"><a href="{{ base_path }}/blog/technical-docs/">Technical Docs</a></h2>
-      <p class="blog-preview-section__desc">Project write-ups, implementation notes, and technical records.</p>
+      <p class="blog-preview-section__eyebrow">Coming Soon</p>
+      <h2 class="blog-preview-section__title">Separate blog domain</h2>
+      <p class="blog-preview-section__desc">This page will later become a simple jump point to the standalone blog.</p>
     </div>
-    <a class="blog-preview-section__link" href="{{ base_path }}/blog/technical-docs/">View all</a>
   </div>
 
-  {% if technical_posts.size > 0 %}
-    <div class="blog-preview-list">
-      {% for post in technical_posts limit:2 %}
-        <article class="blog-preview-item">
-          <h3 class="blog-preview-item__title">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-          </h3>
-          <p class="blog-preview-item__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-          </p>
-          {% if post.excerpt %}
-            <p class="blog-preview-item__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p class="blog-category-empty">No technical docs yet.</p>
-  {% endif %}
-</section>
-
-<section class="blog-preview-section">
-  <div class="blog-preview-section__header">
-    <div>
-      <p class="blog-preview-section__eyebrow">02</p>
-      <h2 class="blog-preview-section__title"><a href="{{ base_path }}/blog/study-notes/">Study Notes</a></h2>
-      <p class="blog-preview-section__desc">Reading notes, course summaries, and learning reflections.</p>
-    </div>
-    <a class="blog-preview-section__link" href="{{ base_path }}/blog/study-notes/">View all</a>
-  </div>
-
-  {% if study_posts.size > 0 %}
-    <div class="blog-preview-list">
-      {% for post in study_posts limit:2 %}
-        <article class="blog-preview-item">
-          <h3 class="blog-preview-item__title">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-          </h3>
-          <p class="blog-preview-item__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-          </p>
-          {% if post.excerpt %}
-            <p class="blog-preview-item__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p class="blog-category-empty">No study notes yet.</p>
-  {% endif %}
-</section>
-
-<section class="blog-preview-section">
-  <div class="blog-preview-section__header">
-    <div>
-      <p class="blog-preview-section__eyebrow">03</p>
-      <h2 class="blog-preview-section__title"><a href="{{ base_path }}/blog/life/">Life Journal</a></h2>
-      <p class="blog-preview-section__desc">Daily records, personal updates, and fragments outside of study.</p>
-    </div>
-    <a class="blog-preview-section__link" href="{{ base_path }}/blog/life/">View all</a>
-  </div>
-
-  {% if life_posts.size > 0 %}
-    <div class="blog-preview-list">
-      {% for post in life_posts limit:2 %}
-        <article class="blog-preview-item">
-          <h3 class="blog-preview-item__title">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-          </h3>
-          <p class="blog-preview-item__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-          </p>
-          {% if post.excerpt %}
-            <p class="blog-preview-item__excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p class="blog-category-empty">No life posts yet.</p>
-  {% endif %}
+  <p class="blog-category-empty">The independent blog link will be added here after the new site is ready.</p>
 </section>
