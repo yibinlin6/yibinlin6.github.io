@@ -85,7 +85,7 @@ redirect_from:
   </article>
 </section>
 
-<section class="home-grid">
+<section class="home-section">
   <article class="home-card">
     <div class="home-section__header">
       <p class="home-section__eyebrow">Honors</p>
@@ -107,22 +107,22 @@ redirect_from:
   </div>
 
   {% if site.publications and site.publications.size > 0 %}
-    <div class="publication-list">
-      {% for post in site.publications reversed %}
-        <article class="publication-entry">
-          <div class="publication-entry__meta">
-            <span>{{ post.venue }}</span>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
-          </div>
-          <h3 class="publication-entry__title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          {% if post.excerpt %}
-            <p class="publication-entry__excerpt">{{ post.excerpt }}</p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
+    <article class="home-card publication-panel">
+      <div class="publication-list">
+        {% for post in site.publications reversed %}
+          <article class="publication-entry">
+            <div class="publication-entry__meta">
+              <span>{{ post.venue }}</span>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y" }}</time>
+            </div>
+            <h3 class="publication-entry__title">{{ post.title }}</h3>
+            {% if post.excerpt %}
+              <p class="publication-entry__excerpt">{{ post.excerpt }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </article>
   {% else %}
     <article class="education-card">
       <p class="home-card__empty">Publication updates will be added here.</p>

@@ -2,8 +2,16 @@
   display: none;
 }
 
-body {
+.homepage-body {
   padding-top: 0;
+}
+
+.homepage-body .page {
+  @include breakpoint($large) {
+    @include span(11 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(0);
+  }
 }
 
 .sidebar {
@@ -12,17 +20,17 @@ body {
   }
 }
 
-.home-hero,
-.home-grid {
+.home-hero {
   display: grid;
   gap: 1.5rem;
 }
 
 .home-hero {
   margin-bottom: 2.5rem;
+  position: relative;
 
-  @include breakpoint($large) {
-    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.75fr);
+  @media screen and (min-width: 900px) {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
     align-items: start;
   }
 }
@@ -65,6 +73,8 @@ html[data-theme="dark"] {
 
 .blog-teaser-card {
   position: relative;
+  display: block;
+  width: 100%;
   padding: 1.7rem;
   overflow: hidden;
   min-height: 100%;
@@ -96,6 +106,7 @@ html[data-theme="dark"] {
 
 .home-card {
   padding: 1.5rem;
+  width: 100%;
 }
 
 .home-hero__lead {
@@ -144,16 +155,16 @@ html[data-theme="dark"] {
 .blog-teaser-card__title {
   margin: 0;
   border-bottom: 0;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  max-width: 14rem;
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  line-height: 1.24;
+  max-width: 15rem;
 }
 
 .blog-teaser-card__lead {
   margin: 1rem 0 1.1rem;
   color: var(--global-text-color-light);
   line-height: 1.75;
-  max-width: 18rem;
+  max-width: 100%;
 }
 
 .blog-teaser-card__orbit {
@@ -170,6 +181,7 @@ html[data-theme="dark"] {
   color: var(--global-text-color);
   font-size: 0.88rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .blog-teaser-card__link {
@@ -223,6 +235,7 @@ html[data-theme="dark"] {
   gap: 1.25rem;
   align-items: center;
   margin-bottom: 1.5rem;
+  min-width: 0;
 }
 
 .education-card__logo {
@@ -232,23 +245,28 @@ html[data-theme="dark"] {
   object-fit: contain;
 }
 
+.education-card__identity > div {
+  min-width: 0;
+}
+
 .education-card__identity h3 {
   margin: 0 0 0.35rem;
-  font-size: 1.45rem;
+  font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .education-card__identity p {
   margin: 0.15rem 0;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  overflow-wrap: anywhere;
 }
 
 .education-card__stats {
   display: grid;
   gap: 1rem;
   margin-bottom: 1.5rem;
-
-  @include breakpoint($medium) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .education-card__stats div {
@@ -275,11 +293,10 @@ html[data-theme="dark"] {
 }
 
 .education-card__stats strong {
-  font-size: 1.08rem;
-}
-
-.home-grid {
-  margin-top: 2rem;
+  display: block;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .home-list {
@@ -311,17 +328,19 @@ html[data-theme="dark"] {
   color: var(--global-text-color-light);
 }
 
+.publication-panel {
+  padding: 1.2rem;
+}
+
 .publication-list {
   display: grid;
   gap: 1rem;
 }
 
 .publication-entry {
-  padding: 1.4rem 1.5rem;
-  border: 1px solid var(--global-border-color);
-  border-radius: 22px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.96));
-  box-shadow: 0 18px 40px rgba(25, 55, 95, 0.08);
+  padding: 1.2rem 1.25rem;
+  border-radius: 18px;
+  background: rgba(21, 101, 192, 0.06);
 }
 
 .publication-entry__meta {
@@ -341,16 +360,7 @@ html[data-theme="dark"] {
   border-bottom: 0;
   font-size: 1.18rem;
   line-height: 1.45;
-}
-
-.publication-entry__title a {
   color: var(--global-text-color);
-  text-decoration: none;
-}
-
-.publication-entry__title a:hover {
-  color: #1565c0;
-  text-decoration: underline;
 }
 
 .publication-entry__excerpt {
@@ -362,8 +372,7 @@ html[data-theme="dark"] {
 
 html[data-theme="dark"] {
   .publication-entry {
-    background: linear-gradient(180deg, rgba(20, 24, 32, 0.9), rgba(13, 17, 23, 0.96));
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+    background: rgba(111, 179, 255, 0.1);
   }
 }
 
@@ -386,10 +395,16 @@ html[data-theme="dark"] {
 
   .education-card__identity {
     align-items: flex-start;
+    flex-direction: column;
   }
 
   .education-card__logo {
     width: 72px;
     height: 72px;
+  }
+
+  .publication-entry__meta {
+    flex-direction: column;
+    gap: 0.35rem;
   }
 }
