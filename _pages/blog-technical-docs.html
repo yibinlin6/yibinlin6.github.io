@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Technical Docs"
+permalink: /blog/technical-docs/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign technical_posts = site.posts | where_exp: "post", "post.categories contains 'technical-docs'" %}
+
+<section class="blog-category-header">
+  <p class="blog-directory__eyebrow">Blog / Technical Docs</p>
+  <h2 class="blog-directory__title">Technical Docs</h2>
+  <p class="blog-directory__lead">
+    Project write-ups, implementation notes, and technical records.
+  </p>
+</section>
+
+{% if technical_posts.size > 0 %}
+  {% for post in technical_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p class="blog-category-empty">No technical docs yet.</p>
+{% endif %}

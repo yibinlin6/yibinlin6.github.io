@@ -11,70 +11,33 @@ author_profile: true
 {% assign study_posts = site.posts | where_exp: "post", "post.categories contains 'study-notes'" %}
 {% assign life_posts = site.posts | where_exp: "post", "post.categories contains 'life'" %}
 
-<section class="blog-overview">
-  <p class="blog-overview__eyebrow">Blog</p>
-  <h2 class="blog-overview__title">Writing, notes, and daily records.</h2>
-  <p class="blog-overview__lead">
-    This page is organized into three parts: technical documentation, study notes, and life journal.
+<section class="blog-directory">
+  <p class="blog-directory__eyebrow">Blog Directory</p>
+  <h2 class="blog-directory__title">Choose a section.</h2>
+  <p class="blog-directory__lead">
+    The blog is divided into three categories. Click a section to view its articles.
   </p>
-</section>
 
-<section class="blog-section">
-  <div class="blog-section__header">
-    <div>
-      <p class="blog-section__eyebrow">01</p>
-      <h2 class="blog-section__title">Technical Docs</h2>
-    </div>
-    <p class="blog-section__count">{{ technical_posts | size }} posts</p>
+  <div class="blog-directory__grid">
+    <a class="blog-directory__card" href="{{ base_path }}/blog/technical-docs/">
+      <span class="blog-directory__index">01</span>
+      <h3>Technical Docs</h3>
+      <p>Project write-ups, implementation notes, and technical records.</p>
+      <span class="blog-directory__meta">{{ technical_posts | size }} posts</span>
+    </a>
+
+    <a class="blog-directory__card" href="{{ base_path }}/blog/study-notes/">
+      <span class="blog-directory__index">02</span>
+      <h3>Study Notes</h3>
+      <p>Reading notes, course summaries, and learning reflections.</p>
+      <span class="blog-directory__meta">{{ study_posts | size }} posts</span>
+    </a>
+
+    <a class="blog-directory__card" href="{{ base_path }}/blog/life/">
+      <span class="blog-directory__index">03</span>
+      <h3>Life Journal</h3>
+      <p>Daily records, personal updates, and fragments outside of study.</p>
+      <span class="blog-directory__meta">{{ life_posts | size }} posts</span>
+    </a>
   </div>
-
-  {% if technical_posts.size > 0 %}
-    {% for post in technical_posts %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% else %}
-    <p class="blog-section__empty">
-      No technical docs yet. Use <code>categories: [technical-docs]</code> in a post front matter to place it here.
-    </p>
-  {% endif %}
-</section>
-
-<section class="blog-section">
-  <div class="blog-section__header">
-    <div>
-      <p class="blog-section__eyebrow">02</p>
-      <h2 class="blog-section__title">Study Notes</h2>
-    </div>
-    <p class="blog-section__count">{{ study_posts | size }} posts</p>
-  </div>
-
-  {% if study_posts.size > 0 %}
-    {% for post in study_posts %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% else %}
-    <p class="blog-section__empty">
-      No study notes yet. Use <code>categories: [study-notes]</code> in a post front matter to place it here.
-    </p>
-  {% endif %}
-</section>
-
-<section class="blog-section">
-  <div class="blog-section__header">
-    <div>
-      <p class="blog-section__eyebrow">03</p>
-      <h2 class="blog-section__title">Life Journal</h2>
-    </div>
-    <p class="blog-section__count">{{ life_posts | size }} posts</p>
-  </div>
-
-  {% if life_posts.size > 0 %}
-    {% for post in life_posts %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% else %}
-    <p class="blog-section__empty">
-      No life posts yet. Use <code>categories: [life]</code> in a post front matter to place it here.
-    </p>
-  {% endif %}
 </section>
