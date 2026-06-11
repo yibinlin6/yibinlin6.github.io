@@ -13,31 +13,65 @@ author_profile: true
 
 <section class="blog-directory">
   <p class="blog-directory__eyebrow">Blog Directory</p>
-  <h2 class="blog-directory__title">Choose a section.</h2>
+  <h2 class="blog-directory__title">Browse by category.</h2>
   <p class="blog-directory__lead">
-    The blog is divided into three categories. Click a section to view its articles.
+    Each section below shows only the latest posts. Click the section title to view all articles in that category.
   </p>
+</section>
 
-  <div class="blog-directory__grid">
-    <a class="blog-directory__card" href="{{ base_path }}/blog/technical-docs/">
-      <span class="blog-directory__index">01</span>
-      <h3>Technical Docs</h3>
-      <p>Project write-ups, implementation notes, and technical records.</p>
-      <span class="blog-directory__meta">{{ technical_posts | size }} posts</span>
-    </a>
-
-    <a class="blog-directory__card" href="{{ base_path }}/blog/study-notes/">
-      <span class="blog-directory__index">02</span>
-      <h3>Study Notes</h3>
-      <p>Reading notes, course summaries, and learning reflections.</p>
-      <span class="blog-directory__meta">{{ study_posts | size }} posts</span>
-    </a>
-
-    <a class="blog-directory__card" href="{{ base_path }}/blog/life/">
-      <span class="blog-directory__index">03</span>
-      <h3>Life Journal</h3>
-      <p>Daily records, personal updates, and fragments outside of study.</p>
-      <span class="blog-directory__meta">{{ life_posts | size }} posts</span>
-    </a>
+<section class="blog-preview-section">
+  <div class="blog-preview-section__header">
+    <div>
+      <p class="blog-preview-section__eyebrow">01</p>
+      <h2 class="blog-preview-section__title"><a href="{{ base_path }}/blog/technical-docs/">Technical Docs</a></h2>
+      <p class="blog-preview-section__desc">Project write-ups, implementation notes, and technical records.</p>
+    </div>
+    <a class="blog-preview-section__link" href="{{ base_path }}/blog/technical-docs/">View all</a>
   </div>
+
+  {% if technical_posts.size > 0 %}
+    {% for post in technical_posts limit:3 %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% else %}
+    <p class="blog-category-empty">No technical docs yet.</p>
+  {% endif %}
+</section>
+
+<section class="blog-preview-section">
+  <div class="blog-preview-section__header">
+    <div>
+      <p class="blog-preview-section__eyebrow">02</p>
+      <h2 class="blog-preview-section__title"><a href="{{ base_path }}/blog/study-notes/">Study Notes</a></h2>
+      <p class="blog-preview-section__desc">Reading notes, course summaries, and learning reflections.</p>
+    </div>
+    <a class="blog-preview-section__link" href="{{ base_path }}/blog/study-notes/">View all</a>
+  </div>
+
+  {% if study_posts.size > 0 %}
+    {% for post in study_posts limit:3 %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% else %}
+    <p class="blog-category-empty">No study notes yet.</p>
+  {% endif %}
+</section>
+
+<section class="blog-preview-section">
+  <div class="blog-preview-section__header">
+    <div>
+      <p class="blog-preview-section__eyebrow">03</p>
+      <h2 class="blog-preview-section__title"><a href="{{ base_path }}/blog/life/">Life Journal</a></h2>
+      <p class="blog-preview-section__desc">Daily records, personal updates, and fragments outside of study.</p>
+    </div>
+    <a class="blog-preview-section__link" href="{{ base_path }}/blog/life/">View all</a>
+  </div>
+
+  {% if life_posts.size > 0 %}
+    {% for post in life_posts limit:3 %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% else %}
+    <p class="blog-category-empty">No life posts yet.</p>
+  {% endif %}
 </section>
