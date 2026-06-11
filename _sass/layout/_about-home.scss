@@ -6,17 +6,36 @@
   padding-top: 0;
 }
 
-.homepage-body .page {
-  @include breakpoint($large) {
-    @include span(11 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(0);
+.homepage-body #main {
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    display: grid;
+    grid-template-columns: minmax(220px, 250px) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+    max-width: 1440px;
   }
 }
 
-.sidebar {
+.homepage-body .sidebar {
   @media screen and (min-width: $sidebar-screen-min-width) {
-    padding-top: 1.5rem;
+    position: sticky;
+    top: 1.5rem;
+    height: auto;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    padding-top: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    float: none;
+  }
+}
+
+.homepage-body .page {
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    width: auto;
+    margin: 0;
+    float: none;
   }
 }
 
