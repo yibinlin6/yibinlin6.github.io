@@ -44,11 +44,11 @@ redirect_from:
 
     <div class="education-card__stats">
       <div>
-        <span>Freshman Ranking</span>
+        <span>Freshman Rank</span>
         <strong>17/193</strong>
       </div>
       <div>
-        <span>Sophomore Ranking</span>
+        <span>Sophomore Rank</span>
         <strong>28/187</strong>
       </div>
       <div>

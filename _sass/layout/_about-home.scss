@@ -158,10 +158,11 @@ html[data-theme="dark"] {
   display: block;
   margin-bottom: 0.35rem;
   color: var(--global-text-color-light);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  white-space: nowrap;
 }
 
 .education-card__stats strong {
