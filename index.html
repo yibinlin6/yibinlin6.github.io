@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yibin Lin (林熠彬)</title>
+  <meta name="description" content="Personal homepage of Yibin Lin, CS undergraduate at Xi'an Jiaotong University." />
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png" />
+
+  <!-- Font Awesome for the contact icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Apply saved theme + language before paint to avoid a flash -->
+  <script>
+    (function () {
+      var theme = localStorage.getItem("theme");
+      if (!theme) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      if (theme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+
+      var lang = localStorage.getItem("lang") || "en";
+      document.documentElement.setAttribute("lang", lang);
+      document.documentElement.setAttribute("data-lang", lang);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Top-right controls: language + theme toggle -->
+  <div class="controls">
+    <button id="lang-toggle" class="control-btn" type="button" aria-label="Switch language">
+      <span data-en="中文" data-zh="EN"></span>
+    </button>
+    <button id="theme-toggle" class="control-btn" type="button" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-sun" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="layout">
+
+    <!-- ============ LEFT: profile + contact ============ -->
+    <aside class="profile">
+      <img class="profile__avatar" src="/images/profile.jpg" alt="Yibin Lin" />
+      <h1 class="profile__name">Yibin Lin<br /><span class="profile__name-cn">林熠彬</span></h1>
+      <p class="profile__bio" data-en="CS Undergraduate @ XJTU" data-zh="西安交通大学 · 计算机本科生"></p>
+
+      <ul class="contact">
+        <li>
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <span data-en="Xi'an, China" data-zh="中国 · 西安"></span>
+        </li>
+        <li>
+          <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+          <span data-en="Xi'an Jiaotong University" data-zh="西安交通大学"></span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:yibinlin753@gmail.com">yibinlin753@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-weixin" aria-hidden="true"></i>
+          <span>WeChat: ssr0082</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>18759950082</span>
+        </li>
+        <li>
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <a href="https://github.com/yibinlin6">github.com/yibinlin6</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- ============ CENTER: main content ============ -->
+    <main class="content">
+
+      <section class="card">
+        <p class="eyebrow" data-en="About Me" data-zh="关于我"></p>
+        <p class="lead"
+           data-en="I am an undergraduate in Computer Science and Technology at Xi'an Jiaotong University (XJTU). My research interests center on multimodal large language models, embodied AI, and computer vision. I work mainly in C/C++ and Python, am comfortable in Linux development environments, and build deep-learning pipelines with PyTorch. Outside of research, I enjoy 📷 photography, 🏀 basketball, ⚽ football, and 🏋️ working out."
+           data-zh="我是西安交通大学（XJTU）计算机科学与技术专业的本科生，研究兴趣集中在多模态大模型、具身智能与计算机视觉。我主要使用 C/C++ 与 Python，熟悉 Linux 开发环境，并基于 PyTorch 搭建深度学习流程。研究之余，我喜欢 📷 摄影、🏀 篮球、⚽ 足球和 🏋️ 健身。"></p>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow" data-en="Education" data-zh="教育经历"></p>
+        <h2 class="card__title" data-en="Academic background" data-zh="学术背景"></h2>
+
+        <div class="edu__identity">
+          <img class="edu__logo" src="/images/XJTU_emblem.svg" alt="Xi'an Jiaotong University logo" />
+          <div>
+            <h3 data-en="Xi'an Jiaotong University" data-zh="西安交通大学"></h3>
+            <p data-en="B.S. in Computer Science and Technology" data-zh="计算机科学与技术 学士"></p>
+            <p data-en="2023.09 – Present" data-zh="2023.09 – 至今"></p>
+          </div>
+        </div>
+
+        <div class="edu__stats">
+          <div>
+            <span data-en="Freshman Rank" data-zh="大一排名"></span>
+            <strong>17/193</strong>
+          </div>
+          <div>
+            <span data-en="Sophomore Rank" data-zh="大二排名"></span>
+            <strong>28/187</strong>
+          </div>
+          <div>
+            <span data-en="Scholarships" data-zh="奖学金"></span>
+            <strong data-en="Second-Class, 2x" data-zh="二等奖学金 · 2次"></strong>
+          </div>
+          <div>
+            <span data-en="English" data-zh="英语水平"></span>
+            <strong>CET-4 619<br />CET-6 590</strong>
+          </div>
+        </div>
+
+        <div class="tags">
+          <span>Linear Algebra 99</span>
+          <span>Advanced Mathematics 95</span>
+          <span>Data Structures 90</span>
+          <span>OOP 98</span>
+          <span>Digital Logic Circuits 90</span>
+          <span>Probability Theory 89</span>
+          <span>ICS 96</span>
+          <span>Computer Graphics 95</span>
+          <span>Computer Networks 89</span>
+          <span>Operating Systems 85</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow" data-en="Honors" data-zh="荣誉奖项"></p>
+        <h2 class="card__title" data-en="Awards and distinctions" data-zh="获奖与荣誉"></h2>
+        <ul class="list">
+          <li data-en="Meritorious Winner (M奖) — Mathematical Contest in Modeling (MCM/ICM)"
+              data-zh="Meritorious Winner（M奖）—— 美国大学生数学建模竞赛（MCM/ICM）"></li>
+          <li data-en="Third Prize — RoboCup China Competition"
+              data-zh="三等奖 —— RoboCup 中国赛"></li>
+          <li data-en="Second-Class Scholarship — Xi'an Jiaotong University"
+              data-zh="二等奖学金 —— 西安交通大学"></li>
+          <li data-en="Excellent Student Award — Xi'an Jiaotong University"
+              data-zh="优秀学生 —— 西安交通大学"></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <p class="eyebrow" data-en="Publications &amp; Projects" data-zh="论文与项目"></p>
+        <h2 class="card__title" data-en="Selected work" data-zh="代表性工作"></h2>
+
+        <div class="pub-list">
+
+          <article class="pub">
+            <div class="pub__meta">
+              <span data-en="Multimodal LLM · Benchmark" data-zh="多模态大模型 · 基准"></span>
+              <span class="pub__venue">NeurIPS 2026 <em data-en="(under review)" data-zh="（在投）"></em></span>
+            </div>
+            <h3 class="pub__title">AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities</h3>
+            <p class="pub__desc"
+               data-en="Built an audio-video joint dataset spanning 33 fine-grained categories and 190 instructions, filling the gap in cross-modal physical-alignment evaluation. Designed a decoupled pipeline pairing objective physical metrics with a modality-separated MLLM checklist to quantify instruction following (IF), fidelity (FP), and realism (R). Evaluated SOTA models such as Wan2.7 and LTX2, and through human-agreement and robustness analysis exposed core failure modes like cross-modal intent failure."
+               data-zh="构建涵盖 33 个细粒度类别、190 条指令的音视频联合数据集，填补跨模态物理对齐评估的空白。设计「客观物理指标 + 模态分离 MLLM 检查表」的解耦评估管线，量化指令遵循（IF）、保真度（FP）与真实感（R）。在 Wan2.7、LTX2 等 SOTA 模型上完成评测，通过人机一致性与鲁棒性分析，揭示多模态大模型「跨模态意图失败」等核心短板。"></p>
+          </article>
+
+          <article class="pub">
+            <div class="pub__meta">
+              <span data-en="Mathematical Modeling" data-zh="数学建模"></span>
+              <span class="pub__venue">MCM/ICM 2026 · <em data-en="Meritorious (M-Prize)" data-zh="M 奖"></em></span>
+            </div>
+            <h3 class="pub__title"
+                data-en="Smartphone Battery-Life Prediction — the PH-TED Model (Problem A)"
+                data-zh="智能手机电池寿命预测 —— PH-TED 模型（A 题）"></h3>
+            <p class="pub__desc"
+               data-en="Built a Progressive Hierarchical Thermal-Electrodynamic (PH-TED) model quantifying time-to-empty (TTE) via five coupled ODEs. Used a Markov-chain-driven Ornstein-Uhlenbeck process to model user-behavior uncertainty, and Sobol sensitivity analysis to identify CPU load (55.8%) and screen brightness (30.4%) as the key drains. An MPC-based active scheduling strategy achieved a 167% battery-life improvement."
+               data-zh="构建渐进分层热-电动力学（PH-TED）模型，通过 5 个耦合常微分方程量化电池耗尽时间（TTE）。采用马尔可夫链驱动的 Ornstein-Uhlenbeck 过程模拟用户行为不确定性，结合 Sobol 敏感性分析识别 CPU 负载（55.8%）与屏幕亮度（30.4%）为关键耗电因素。基于模型预测控制（MPC）的主动调度策略实现 167% 的续航提升。"></p>
+          </article>
+
+          <article class="pub">
+            <div class="pub__meta">
+              <span data-en="Robotics · Control" data-zh="机器人 · 控制"></span>
+              <span class="pub__venue">RoboCup China · <em data-en="Third Prize" data-zh="国赛三等奖"></em></span>
+            </div>
+            <h3 class="pub__title"
+                data-en="Electronic Control System for a Multi-DOF Robotic Arm"
+                data-zh="多自由度机械臂电控系统开发"></h3>
+            <p class="pub__desc"
+               data-en="Developed the electronic control system for a multi-DOF robotic arm, covering low-level motor drivers and closed-loop sensor control. Applied PID control for gravity compensation, eliminating steady-state error and motion jitter from link self-weight and substantially improving end-effector positioning accuracy."
+               data-zh="负责多自由度机械臂电控系统开发，完成底层电机驱动与传感器闭环控制。应用 PID 控制实现机械臂重力补偿，消除连杆自重导致的稳态误差与运动抖动，大幅提升末端定位精度。"></p>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ RIGHT: blog card ============ -->
+    <aside class="blog-col">
+      <div class="blog-card">
+        <p class="eyebrow" data-en="Blog" data-zh="博客"></p>
+        <h2 class="blog-card__title" data-en="A standalone blog is on the way." data-zh="独立博客即将上线。"></h2>
+        <p class="blog-card__lead"
+           data-en="I plan to launch a separate blog for notes, technical writing, and life updates under its own domain."
+           data-zh="我计划在独立域名下搭建一个博客，记录笔记、技术写作和生活更新。"></p>
+        <div class="tags tags--blog">
+          <span data-en="Notes" data-zh="笔记"></span>
+          <span data-en="Projects" data-zh="项目"></span>
+          <span data-en="Life" data-zh="生活"></span>
+        </div>
+        <!-- When the blog is ready, replace the muted span with:
+             <a class="blog-card__link" href="https://your-blog-url">Visit Blog</a> -->
+        <span class="blog-card__link blog-card__link--muted"
+              data-en="Domain coming soon" data-zh="域名即将上线"></span>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer">
+    <span data-en="© 2026 Yibin Lin. Built as a static page, hosted on GitHub Pages."
+          data-zh="© 2026 林熠彬 · 纯静态页面，托管于 GitHub Pages。"></span>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
