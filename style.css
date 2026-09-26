@@ -218,6 +218,10 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   object-fit: contain;
   flex-shrink: 0;
 }
+.edu__identity + .edu__identity {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
 .edu__identity h3 { margin: 0 0 0.3rem; font-size: 1.5rem; line-height: 1.15; }
 .edu__identity p { margin: 0.1rem 0; color: var(--text-light); }
 
