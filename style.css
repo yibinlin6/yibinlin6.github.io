@@ -297,6 +297,55 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 }
 
 /* ==========================================================================
+   RIGHT — widgets (weather + daily quote)
+   ========================================================================== */
+.widget {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.widget__weather {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.widget__weather-icon { font-size: 2.4rem; line-height: 1; }
+.widget__temp { display: block; font-size: 1.6rem; line-height: 1.2; }
+.widget__weather-desc { color: var(--text-light); font-size: 0.9rem; }
+.widget__loc {
+  margin: 0.9rem 0 0;
+  color: var(--text-light);
+  font-size: 0.82rem;
+}
+
+.widget__quote {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+.widget__date {
+  float: right;
+  color: var(--text-light);
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.widget__quote-from {
+  display: block;
+  margin-top: 0.7rem;
+  text-align: right;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  font-style: normal;
+}
+.widget__quote-from:not(:empty)::before { content: "— "; }
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 .site-footer {

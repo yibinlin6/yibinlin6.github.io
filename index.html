@@ -213,6 +213,31 @@
         <a class="blog-card__link" href="https://blog-94s.pages.dev" target="_blank" rel="noopener"
            data-en="Visit Blog" data-zh="访问博客"></a>
       </div>
+
+      <!-- Live weather (Open-Meteo, Xi'an) -->
+      <div class="widget" id="weather-widget">
+        <p class="eyebrow" data-en="Weather" data-zh="实时天气"></p>
+        <div class="widget__weather">
+          <span class="widget__weather-icon" id="weather-icon" aria-hidden="true">⏳</span>
+          <div>
+            <strong class="widget__temp" id="weather-temp">—</strong>
+            <span class="widget__weather-desc" id="weather-desc"
+                  data-en="Loading…" data-zh="加载中…"></span>
+          </div>
+        </div>
+        <p class="widget__loc" data-en="Xi'an, China" data-zh="中国 · 西安"></p>
+      </div>
+
+      <!-- Daily quote (Hitokoto) -->
+      <div class="widget" id="quote-widget">
+        <p class="eyebrow">
+          <span data-en="Daily Quote" data-zh="每日一句"></span>
+          <span class="widget__date" id="quote-date"></span>
+        </p>
+        <blockquote class="widget__quote" id="quote-text"
+                    data-en="Loading…" data-zh="加载中…"></blockquote>
+        <cite class="widget__quote-from" id="quote-from"></cite>
+      </div>
     </aside>
 
   </div>
